@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
 
   spec.swift_version = "5.0"
 
-    spec.dependency "OpenSSL-Universal", '~>1.1.1'
-spec.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit' }
+  spec.dependency "OpenSSL-Universal", '1.1.1100'
+  spec.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit' }
 
   spec.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
